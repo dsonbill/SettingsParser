@@ -26,6 +26,7 @@ namespace SettingsParser
         {
             get
             {
+                if (!storage.ContainsKey(settingsKey)) throw new KeyNotFoundException("Settings key \"" + settingsKey + "\" not found!");
                 return storage[settingsKey].Settings;
             }
         }
@@ -51,6 +52,7 @@ namespace SettingsParser
 
         public void Initialize(string configFolder)
         {
+            LoadImplementations();
             foreach (KeyValuePair<string, Type> kvpair in implementations)
             {
                 Type type = typeof(ConfigParser<>).MakeGenericType(kvpair.Value);
