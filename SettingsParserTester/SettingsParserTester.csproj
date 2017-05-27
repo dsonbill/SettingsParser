@@ -37,6 +37,7 @@
     <StartupObject>SettingsParserTester.SettingsParserTester</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>

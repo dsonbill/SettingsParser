@@ -10,9 +10,16 @@ using System.Text;
 
 namespace SettingsParser
 {
-    public class ConfigParser<T> where T : class
+    public interface IConfigParser
     {
-        public T Settings { get; private set; }
+        dynamic Settings { get; set; }
+        void LoadSettings();
+        void SaveSettings();
+    }
+
+    public class ConfigParser<T> : IConfigParser where T : class
+    {
+        public dynamic Settings { get; set; }
         private Dictionary<Type, Func<string, object>> fromString = new Dictionary<Type, Func<string, object>>();
         private string filePath;
 
