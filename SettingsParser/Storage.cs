@@ -57,7 +57,7 @@ namespace SettingsParser
             {
                 Type type = typeof(ConfigParser<>).MakeGenericType(kvpair.Value);
 
-                storage.Add(kvpair.Key, Activator.CreateInstance(type, new object[1] { Path.Combine(configFolder, paths[kvpair.Key]) }) as IConfigParser);
+                storage.Add(kvpair.Key, Activator.CreateInstance(type, new object[2] { Activator.CreateInstance(kvpair.Value), Path.Combine(configFolder, paths[kvpair.Key]) }) as IConfigParser);
             }
         }
 
