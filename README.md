@@ -7,7 +7,7 @@ It is a library that writes values to a text file, and reads those values from t
 
 
 ### Requirements
-* [.NET Framework 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851) (should work with Mono)
+* [.NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=17851) (should work with Mono/Unity 2017.1+)
 
 
 ### How to use
