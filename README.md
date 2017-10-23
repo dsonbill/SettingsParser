@@ -16,5 +16,5 @@ See [SettingsParserTester](https://github.com/RockyTV/SettingsParser/blob/master
 
 ### Original Authors
 
-*[Alexandre Oliveira](https://github.com/RockyTV/SettingsParser)
+* [Alexandre Oliveira](https://github.com/RockyTV/SettingsParser)
 * [Christopher Andrews](http://github.com/godarklight/)
