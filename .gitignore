@@ -7,3 +7,4 @@ SettingsParserTester/bin/*
 SettingsParserTester/obj/*
 *.suo
 *.csproj.user
+.vs/
