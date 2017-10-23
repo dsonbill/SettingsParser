@@ -7,13 +7,14 @@ It is a library that writes values to a text file, and reads those values from t
 
 
 ### Requirements
-* [.NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=17851) (should work with Mono/Unity 2017.1+)
+* [.NET Standard 2.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851) (should work with Mono/Unity 2017.1+)
 
 
 ### How to use
 See [SettingsParserTester](https://github.com/RockyTV/SettingsParser/blob/master/SettingsParserTester/SettingsParserTester.cs)
 
 
-### Credits
+### Original Authors
 
-* [Christopher Andrews](http://github.com/godarklight/) - for teaching me advanced C# coding and helping me out
+*[Alexandre Oliveira](https://github.com/RockyTV/SettingsParser)
+* [Christopher Andrews](http://github.com/godarklight/)
